@@ -83,6 +83,7 @@ export default {
         this.snackbarColor = (rsp === this.expectedOtp) ? 'success' : 'warning'
         this.text = (rsp === this.expectedOtp) ? 'Success' : 'Error'
         this.snackbar = true
+        this.$router.push("/register/voter");
       }, 3500)
     },
   }

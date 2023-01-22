@@ -17,10 +17,15 @@ const routes = [
         name: 'landing',
         component: HomeView
       },
-        {
+      {
         path: '/login',
         name: 'login',
         component: () => import('../views/Login.vue')
+      },
+      {
+        path: '/status',
+        name: 'status',
+        component: () => import('../views/Status.vue')
       },
       ]
 
