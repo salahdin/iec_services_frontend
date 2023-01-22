@@ -3,9 +3,7 @@
         <!--... Left side Navigation-->
         <v-navigation-drawer v-model="drawer" app color="primary">
             <v-sheet class="pa-4" color="primary">
-                <v-avatar class="mb-4" color="grey darken-1" size="64"></v-avatar>
 
-                <div class="white--text text--lighten-1"> User Name</div>
             </v-sheet>
 
             <v-divider></v-divider>
@@ -38,11 +36,11 @@ export default {
             drawer:null,
             links: [
                 ['mdi-view-dashboard-edit-outline', 'Dashboard'],
-                ['mdi-account-school', 'Student'],
-                ['mdi-school', 'Teacher'],
-                ['mdi-calendar', 'Schedule'],
-                ['mdi-chat', 'Chat'],
-                ['mdi-newspaper', 'Latest'],
+                ['mdi-account-school', 'Polls'],
+                ['mdi-school', 'Reports'],
+                ['mdi-calendar', 'Regulations'],
+                ['mdi-account-outline', 'Profile'],
+                ['mdi-cog', 'Settings'],
             ],
         };
     },
