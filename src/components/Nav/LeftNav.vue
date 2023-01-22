@@ -23,6 +23,7 @@
             <v-divider></v-divider>
 
         </v-navigation-drawer>
+      <RouterView class="pa-2 ma-2"></RouterView>
     </v-container>
 </template>
   

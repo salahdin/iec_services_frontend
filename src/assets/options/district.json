@@ -1,0 +1,140 @@
+{
+  "DISTRICT": [
+    {
+      "name": "North-West",
+      "value": "North-West",
+      "constituencies": [
+        {
+          "name": "Constituency 1",
+          "value": "Constituency 1"
+        },
+        {
+          "name": "Constituency 2",
+          "value": "Constituency 2"
+        },
+        {
+          "name": "Constituency 3",
+          "value": "Constituency 3"
+        }
+      ]
+    },
+    {
+      "name": "Central",
+      "value": "Central",
+      "constituencies": [
+        {
+          "name": "Constituency 4",
+          "value": "Constituency 4"
+        },
+        {
+          "name": "Constituency 5",
+          "value": "Constituency 5"
+        },
+        {
+          "name": "Constituency 6",
+          "value": "Constituency 6"
+        }
+      ]
+    },
+    {
+      "name": "Southern",
+      "value": "Southern",
+      "constituencies": [
+        {
+          "name": "Constituency 7",
+          "value": "Constituency 7"
+        },
+        {
+          "name": "Constituency 8",
+          "value": "Constituency 8"
+        },
+        {
+          "name": "Constituency 9",
+          "value": "Constituency 9"
+        }
+      ]
+    },
+    {
+      "name": "Kgalagadi",
+      "value": "Kgalagadi",
+      "constituencies": [
+        {
+          "name": "Constituency 10",
+          "value": "Constituency 10"
+        },
+        {
+          "name": "Constituency 11",
+          "value": "Constituency 11"
+        },
+        {
+          "name": "Constituency 12",
+          "value": "Constituency 12"
+        }
+      ]
+    },
+    {
+      "name": "Ghanzi",
+      "value": "Ghanzi",
+      "constituencies": [
+        {
+          "name": "Constituency 13",
+          "value": "Constituency 13"
+        },
+        {
+          "name": "Constituency 14",
+          "value": "Constituency 14"
+        },
+        {
+          "name": "Constituency 15",
+          "value": "Constituency 15"
+        }
+      ]
+    },
+    {
+      "name": "North-East",
+      "value": "North-East",
+      "constituencies": [
+        {
+          "name": "Constituency 16",
+          "value": "Constituency 16"
+        },
+        {
+          "name": "Constituency 17",
+          "value": "Constituency 17"
+        },
+        {
+          "name": "Constituency 18",
+          "value": "Constituency 18"
+        }
+      ]
+    },
+    {
+      "name": "Kgatleng",
+      "value": "Kgatleng",
+      "constituencies": [
+        {
+          "name": "Constituency 19",
+          "value": "Constituency 19"
+        },
+        {
+          "name": "Constituency 20",
+          "value": "Constituency 20"
+        },
+        {
+          "name": "Constituency 21",
+          "value": "Constituency 21"
+        }
+      ]
+    },
+    {
+      "name": "Kweneng",
+      "value": "Kweneng",
+      "constituencies": [
+        {
+          "name": "Constituency 22",
+          "value": "Constituency 22"
+        }
+      ]
+    }
+  ]
+}

@@ -1,9 +1,8 @@
 <template>
   <v-app id="inspire">
-
-        <v-layout align-center justify-center>
+        <v-layout  justify-center>
           <v-flex xs12 sm8 md4>
-            <v-card class="elevation-12">
+            <v-card >
               <v-toolbar dark color="primary">
                 <v-toolbar-title>Login form</v-toolbar-title>
               </v-toolbar>
@@ -42,7 +41,7 @@
               ></v-otp-input>
             </v-card-text>
           </v-card>
-          <v-overlay absolute :value="loading">
+          <v-overlay opacity="1" absolute :value="loading">
             <v-progress-circular
                 indeterminate
                 color="primary"

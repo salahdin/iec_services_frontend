@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-
+import Dashboard from "@/layouts/Dashboard.vue";
+import BasicLayout from "@/layouts/BasicLayout.vue";
 
 Vue.use(VueRouter)
 
@@ -9,23 +10,44 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: BasicLayout,
+    children: [
+      {
+        path: '',
+        name: 'landing',
+        component: HomeView
+      },
+        {
+        path: '/login',
+        name: 'login',
+        component: () => import('../views/Login.vue')
+      },
+      ]
+
   },
   {
-    path: '/register',
-    name: 'regster',
-    component: () => import('@/views/Registration/VoterRegistration.vue')
+    path: '/register/',
+    component: Dashboard,
+    children: [
+      {
+        path: "candidate",
+        name: "candidate",
+        component: () => import('@/views/Registration/CandidateRegistration.vue')
+      },
+      {
+        path: 'voter',
+        name: 'voter',
+        component: () => import('@/views/Registration/VoterRegistration.vue')
+      }
+    ]
   },
   {
     path: '/login',
     name: 'login',
     component: () => import('../views/Login.vue')
   },
-  {
-    path: '/dashboard',
-    name: 'dashboard',
-    component: () => import('../views/Dashboard/Index.vue')
-  }
+
+
 ]
 
 const router = new VueRouter({
@@ -35,13 +57,13 @@ const router = new VueRouter({
 })
 router.beforeEach((to, from, next) => {
   // redirect to login page if not logged in and trying to access a restricted page
-  const publicPages = ['/login',];
+  const publicPages = ['/login', '*'];
   const authRequired = !publicPages.includes(to.path);
   const loggedIn = localStorage.getItem('user');
 
-  if (authRequired && !loggedIn) {
-    return next('/login');
-  }
+  //if (authRequired && !loggedIn) {
+    //return next('/login');
+  //}
 
   next();
 })
